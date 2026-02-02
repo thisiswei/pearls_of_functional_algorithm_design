@@ -34,3 +34,15 @@ Exploit monotonicity to **eliminate entire rows/columns**, and shrink the search
 
 ## What “saddleback” means
 The name comes from the shape of the surface `f(x,y)` when `f` increases in both directions — it looks like a saddle. Starting from a saddle “corner” (top‑left) lets you discard a full row or column each step.
+
+
+## Sample inputs/outputs
+
+### 1) f(x,y) = x + y, z = 5
+Output pairs: (0,5), (1,4), (2,3), (3,2), (4,1), (5,0)
+
+### 2) f(x,y) = x + 2y, z = 7
+Output pairs: (7,0), (5,1), (3,2), (1,3)
+
+### 3) f(x,y) = 2x + 3y, z = 8
+Output pairs: (4,0), (1,2)
