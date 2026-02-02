@@ -30,3 +30,7 @@ Use **binary search** on `f(0, y)` and `f(x, 0)` to find `m` and `n` in **O(log 
 
 ## Takeaway
 Exploit monotonicity to **eliminate entire rows/columns**, and shrink the search region before you start.
+
+
+## What “saddleback” means
+The name comes from the shape of the surface `f(x,y)` when `f` increases in both directions — it looks like a saddle. Starting from a saddle “corner” (top‑left) lets you discard a full row or column each step.
