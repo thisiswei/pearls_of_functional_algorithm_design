@@ -46,3 +46,7 @@ Output pairs: (7,0), (5,1), (3,2), (1,3)
 
 ### 3) f(x,y) = 2x + 3y, z = 8
 Output pairs: (4,0), (1,2)
+
+
+## What is the problem (plain terms)
+Given a function `f(x, y)` that strictly increases in both `x` and `y`, and a target `z`, find **all pairs** `(x, y)` such that `f(x, y) = z`, using as few evaluations of `f` as possible.
