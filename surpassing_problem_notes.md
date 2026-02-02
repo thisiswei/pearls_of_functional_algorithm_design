@@ -80,3 +80,12 @@ Use merge‑sort counting when your problem matches these signals:
 - Count of greater elements to the right (surpassers)
 - Reverse pairs: count pairs with a[i] > 2*a[j]
 - Dominance counting (1D) and some 2D variants with sorting
+
+
+## Merge sort concept (and why it applies here)
+
+### Merge sort in one paragraph
+Merge sort splits a list into halves, sorts each half recursively, then **merges** the two sorted halves into one sorted list. It runs in O(n log n).
+
+### Why this pearl uses merge sort
+During the **merge** step, you already compare elements from the left and right halves in order. That makes it cheap to count **cross‑half relationships** like “how many right elements are greater than this left element.” The surpasser algorithm piggybacks on this merge step to get O(n log n) counts instead of O(n^2).
